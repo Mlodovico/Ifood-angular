@@ -1,6 +1,30 @@
 <main class="grid-cols-12">
   <div class="col-span-12">
     <app-header></app-header>
+    <div class="grid col-span-12 grid-cols-12 place-items-center p-3">
+      <div class="grid col-span-12 text-center">
+        <span class="text-2xl font-bold text-gray-700">
+          Faça mercado no iFood
+          <p class="text-lg font-light text-gray-700">
+            Entregamos tudo o que precisa na porta da sua casa, de hortifruti a
+            itens de limpeza
+          </p>
+        </span>
+      </div>
+      <div class="grid grid-cols-6 col-span-12">
+        <input type="text" placeholder="Onde você quer?" class="bg-gray-100 rounded p-3 my-5 col-span-6" />
+        <button
+          class="bg-red-600 rounded px-6 py-3 text-white font-bold col-span-6"
+        >
+          Ver mercados próximos
+        </button>
+      </div>
+      <div class="p-6 grid grid-flow-col col-span-12 gap-2 ">
+        <span *ngFor="let categorySelector of categorySelector" class="hover:bg-gray-600 duration-300 rounded-3xl bg-gray-300 px-3 py-2">
+          {{ categorySelector }}
+        </span>
+      </div>
+    </div>
   </div>
 </main>
 

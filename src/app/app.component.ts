@@ -12,4 +12,7 @@ import { HeaderComponent } from './components/header/header.component';
 })
 export class AppComponent {
   title = 'ifood-angular';
+  categorySelector = [
+    'Frios', 'Laticinios', 'Feira', 'Hortifruti', 'Limpeza', 'Carnes', 'Bebidas'
+  ]
 }
