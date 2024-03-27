@@ -1,13 +1,14 @@
 <header>
   <div
-    class="flex grid-cols-12 col-span-12 justify-between px-3 py-5 place-items-center"
+    class="flex grid-cols-12 col-span-12 justify-between px-3 py-5 place-items-center shadow bg-gray-50"
   >
     <button class="bg-white hover:transition delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-gray-200 duration-300 rounded p-3">
       <img src="assets/menu-icon.svg" />
     </button>
     <img src="assets/ifood-logo.svg" width="80" />
     <button
-      (click)="navigateToLogin()"
+
+      routerLink="/login"
       class="bg-red-600 rounded px-6 py-2 text-white font-bold"
     >
       Entrar
