@@ -20,9 +20,21 @@
         </button>
       </div>
       <div class="p-6 grid grid-flow-col col-span-12 gap-2 ">
-        <span *ngFor="let categorySelector of categorySelector" class="hover:bg-gray-600 duration-300 rounded-3xl bg-gray-300 px-3 py-2">
+        <button *ngFor="let categorySelector of categorySelector" class="hover:bg-gray-600 duration-300 rounded-3xl bg-gray-300 px-3 py-2">
           {{ categorySelector }}
-        </span>
+        </button>
+      </div>
+      <div class="grid col-span-12 gap-2">
+        <div class="col-span-6 bg-red-600 p-3 rounded-2xl text-white">
+          <span>
+            Restaurante
+          </span>
+        </div>
+        <div class="col-span-6 bg-lime-500 p-3 rounded-2xl text-white">
+          <span>
+            Mercado
+          </span>
+        </div>
       </div>
     </div>
   </div>
